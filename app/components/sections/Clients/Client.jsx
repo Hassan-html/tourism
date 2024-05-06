@@ -99,7 +99,7 @@ export default function Client() {
 
         <div className="slider-container w-[70%] m-auto">
           <Slider {...settings} className="gap-[10px]">
-            <div className="grid grid-cols-2 gap-2 border-black rounded-[10px] shadow-xl border-opacity-45">
+            <div className="grid grid-cols-2 gap-2 border-black rounded-[10px] shadow-xl border-opacity-45 w-[300px] max-w-[400px] bg-red-400 text-white">
               <div className="image relative flex justify-center items-center">
                 <div className="image relative w-[50px] h-[50px] overflow-hidden rounded-none">
                   <Image
@@ -119,7 +119,7 @@ export default function Client() {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-2 border-black rounded-[10px] shadow-xl border-opacity-45">
+            <div className="grid grid-cols-2 gap-2 border-black rounded-[10px] shadow-xl border-opacity-45 w-[300px] max-w-[400px] bg-red-400 text-white">
               <div className="image relative flex justify-center items-center">
                 <div className="image relative w-[50px] h-[50px] overflow-hidden rounded-none">
                   <Image
@@ -139,7 +139,7 @@ export default function Client() {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-2 border-black rounded-[10px] shadow-xl border-opacity-45">
+            <div className="grid grid-cols-2 gap-2 border-black rounded-[10px] shadow-xl border-opacity-45 w-[300px] max-w-[400px] bg-red-400 text-white">
               <div className="image relative flex justify-center items-center">
                 <div className="image relative w-[50px] h-[50px] overflow-hidden rounded-none">
                   <Image
@@ -159,7 +159,7 @@ export default function Client() {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-2 border-black rounded-[10px] shadow-xl border-opacity-45">
+            <div className="grid grid-cols-2 gap-2 border-black rounded-[10px] shadow-xl border-opacity-45 w-[300px] max-w-[400px] bg-red-400 text-white">
               <div className="image relative flex justify-center items-center">
                 <div className="image relative w-[50px] h-[50px] overflow-hidden rounded-none">
                   <Image
