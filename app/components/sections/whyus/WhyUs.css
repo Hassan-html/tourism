@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.whyus ul li {
+  @apply flex gap-2 items-center;
+  color: rgb(153, 153, 153);
+  padding: 10px 5px;
+}
+.whyus article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.whyus article .icon {
+  color: rgb(204, 7, 7) !important;
+}

@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navlink a {
+  @apply relative flex lg:justify-center lg:items-center text-nowrap;
+}
+.navlink a::before {
+  @apply w-[0px] h-[0px] bg-red-600 md:rounded-full block absolute z-[-1]  lg:bottom-[-10px];
+  content: "";
+  transition: 0.5s all ease-in-out;
+}
+.navlink li {
+  @apply w-[100%] lg:w-fit p-4;
+}
+
+.navlink a:hover {
+  @apply lg:text-black text-white;
+}
+.navlink li:hover {
+  @apply lg:text-black text-white lg:bg-opacity-0 bg-red-700;
+}
+.navlink {
+  @apply w-[100%];
+}
+
+.navlink a:hover::before {
+  @apply lg:w-[100%] lg:h-[3px] lg:bottom-[-10px];
+}

@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* exported components */
+
+.homeSec1 > article {
+  @apply w-full lg:h-full rounded-[10px] shadow-lg cursor-pointer hover:bg-Dark hover:text-white h-[300px] hover:shadow-Dark;
+}
+.homeSec1 article .icon {
+  @apply absolute top-[-20px] flex justify-center items-center w-[50px] h-[50px] rounded-full text-black border-black border-2;
+}
+.homeSec1 article:hover .icon {
+  @apply text-white bg-Light border-none;
+}
+
+/* exported components */
+
+.half-box {
+  @apply relative md:absolute left-0  md:rotate-[-20deg] lg:w-[500px] w-full h-full md:w-[300px] md:h-[2000px] transition-all;
+  background: linear-gradient(rgba(3, 3, 87, 0.781), black),
+    url("../public/images/latern.jpg");
+  background-size: contain;
+}
+
+/* ============ Titles ============== */
+
+.secondaryTitle {
+  @apply py-5 relative text-[17px] text-red-700 w-fit flex justify-center items-center uppercase;
+}
+.secondaryTitle::after {
+  @apply w-[40px] h-[3px]  bg-red-600 rounded-full block absolute z-[-1]  right-[-70px];
+  content: "";
+  transition: 0.5s all ease-in-out;
+  box-shadow: -10px -10px, -10px 10px;
+  animation: 1s flowbars linear infinite;
+}
+
+.mainTitle {
+  @apply py-2 font-[900] relative text-[40px] w-fit flex justify-center items-center uppercase tracking-wider;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* ============ primary button ============== */
+.primary-btn {
+  @apply relative flex justify-center items-center px-8 py-3 bg-red-500 text-white;
+}
+
+.primary-btn::before {
+  @apply flex justify-center items-center absolute  content-[""] w-0 h-0 bg-white transition-all opacity-0;
+}
+.primary-btn:hover::before {
+  @apply w-full h-full content-["Continue"] left-0    bg-secondaryDark transition-all opacity-100;
+}
+.primary-btn:hover {
+  @apply scale-[1.2];
+}
+.primary-btn::after {
+  @apply flex justify-center items-center absolute  content-[""] w-0 h-0 z-[-10] transition-all;
+}
+.primary-btn:hover::after {
+  @apply w-[110%] h-[130%];
+  border: 1px solid rgb(5, 5, 121);
+}
+
+/* animations */
+
+@keyframes flowbars {
+  0% {
+    box-shadow: -10px -10px, -10px 10px;
+    right: -70px;
+  }
+  50% {
+    box-shadow: 10px -10px, 10px 10px;
+    right: -60px;
+  }
+
+  100% {
+    box-shadow: -10px -10px, -10px 10px;
+    right: -70px;
+  }
+}

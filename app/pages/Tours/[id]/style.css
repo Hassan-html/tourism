@@ -1,0 +1,39 @@
+.gallery .Title {
+  @apply p-2 font-[900] text-[30px] tracking-wider;
+}
+.gallery h3 {
+  @apply flex gap-2 items-center text-red-400;
+}
+.gallery .details {
+  @apply mt-10;
+}
+.gallery .groups {
+  @apply p-4 flex items-center gap-4;
+  background: rgb(33, 26, 95);
+}
+.gallery .groups .group {
+  @apply text-white text-[20px] flex items-center gap-2;
+}
+
+.gallery .groups .group p {
+  @apply text-[10px] pl-2;
+  border-left: 0.5px solid white;
+}
+.gallery a {
+  @apply flex items-center gap-2;
+}
+.tourInfo {
+  @apply flex flex-col items-start justify-center gap-4 rounded-[20px] px-4 py-8 w-[300px]  text-white;
+  background: rgb(255, 0, 0);
+}
+.tourDetails h4 {
+  border-left: 4px solid red;
+  padding-left: 10px;
+}
+.tourInfo .group {
+  @apply text-white text-[20px] flex items-center gap-2;
+}
+.tourInfo .group p {
+  @apply text-[20px] pl-2;
+  border-left: 0.5px solid white;
+}
