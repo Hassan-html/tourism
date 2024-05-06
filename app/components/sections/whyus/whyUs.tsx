@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 const WhyUs = () => {
   return (
     <>
-      <section className="whyus grid grid-rows-2 md:grid-cols-2 md:grid-rows-1 md:p-2  p-4 mt-[100px] gap-[10px]">
+      <section className="whyus grid grid-rows-2 md:grid-cols-2 md:grid-rows-1 md:p-2  p-4 mt-[100px] gap-[10px] my-[200px]">
         {/* image */}
         <div className="w-full h-full relative md:w-[600px] md:h-[400px] justify-self-end gap-[10px] ml-2">
           <Image

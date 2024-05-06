@@ -132,7 +132,7 @@ const Header = () => {
                 exit="inactive"
                 className="lg:opacity-0"
               >
-                <Link href="/Home">All Tours</Link>
+                <Link href="/pages/Tours">All Tours</Link>
               </motion.li>
               <motion.li
                 variants={variants}
@@ -142,7 +142,7 @@ const Header = () => {
                 exit="inactive"
                 className="lg:opacity-0"
               >
-                <Link href="/Home">About</Link>
+                <Link href="/pages/About">About</Link>
               </motion.li>
               <motion.li
                 variants={variants}
@@ -152,7 +152,7 @@ const Header = () => {
                 exit="inactive"
                 className="lg:opacity-0"
               >
-                <Link href="/Home">Contact</Link>
+                <Link href="/pages/Contact">Contact</Link>
               </motion.li>
               <motion.li
                 variants={variants}
@@ -162,7 +162,7 @@ const Header = () => {
                 exit="inactive"
                 className="lg:opacity-0"
               >
-                <Link href="/Home">Terms & Conditions</Link>
+                <Link href="/pages/Terms&Conditions">Terms & Conditions</Link>
               </motion.li>
             </motion.ul>
           </AnimatePresence>

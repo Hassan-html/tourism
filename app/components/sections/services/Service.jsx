@@ -5,7 +5,8 @@ const Service = () => {
   return (
     <>
       {" "}
-      <h1 className="secondaryTitle w-fit m-auto">Our Services</h1>
+      <h1 className="secondaryTitle w-fit mt-[100px]  mx-auto">Our Services</h1>
+      <h2 className="mainTitle w-fit m-auto">Tourism Service we provide</h2>
       <section className="homeSec1 min-h-[200px]  px-10 gap-[40px] grid lg:grid-cols-4 items-center justify-items-center my-[20px] mt-[350px] md:mt-[150px]">
         <motion.article
           initial={{ opacity: 0, y: 10 }}

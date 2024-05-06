@@ -4,6 +4,8 @@ import Link from "next/link";
 import WhyUs from "@/app/components/sections/whyus/whyUs";
 import ToursSlider from "@/app/components/sections/tourSection/ToursSlider";
 import Service from "@/app/components/sections/services/Service";
+import Client from "@/app/components/sections/Clients/client";
+
 export default function Home() {
   return (
     <>
@@ -44,6 +46,7 @@ export default function Home() {
       <Service />
       <ToursSlider />
       <WhyUs />
+      <Client />
     </>
   );
 }
