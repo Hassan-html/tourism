@@ -4,7 +4,7 @@ import React from "react";
 import Banner from "@/app/components/secondaryBanner/Banner";
 import WhyUs from "@/app/components/sections/whyus/whyUs";
 import Service from "@/app/components/sections/services/Service";
-import Client from "@/app/components/sections/Clients/client";
+import Client from "@/app/components/sections/Clients/Client";
 const page = () => {
   return (
     <>

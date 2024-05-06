@@ -4,7 +4,7 @@ import Link from "next/link";
 import WhyUs from "@/app/components/sections/whyus/whyUs";
 import ToursSlider from "@/app/components/sections/tourSection/ToursSlider";
 import Service from "@/app/components/sections/services/Service";
-import Client from "@/app/components/sections/Clients/client";
+import Client from "@/app/components/sections/Clients/Client";
 
 export default function Home() {
   return (
