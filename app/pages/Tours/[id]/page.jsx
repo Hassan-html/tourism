@@ -92,7 +92,7 @@ const TourDetail = () => {
                     })}
 
                     <Link
-                      href="/Contact"
+                      href="/pages/Contact"
                       className="primary-btn my-[40px] w-fit"
                     >
                       Book Now
