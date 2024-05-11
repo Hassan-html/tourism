@@ -25,6 +25,7 @@ export default function App() {
       .then((e) => {
         toast.success("Booking submited check your email!");
         console.log(Booking, Tours);
+        alert("Check Your email For confirmation! !");
         setLoading(false);
       })
       .catch((err) => {
