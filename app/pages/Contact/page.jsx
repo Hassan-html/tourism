@@ -4,13 +4,16 @@ import Banner from "@/app/components/secondaryBanner/Banner";
 import { useState } from "react";
 import { FaLocationPin, FaMap, FaPhone } from "react-icons/fa6";
 import { HiMail } from "react-icons/hi";
+import "./style.css";
+import { Tours } from "@/app/staticdata/data";
 
 export default function App() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
-
+  const [Booking, setBooking] = useState({});
+  const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
 
@@ -54,6 +57,168 @@ export default function App() {
     <>
       <section className=" min-h-[400px] ">
         <Banner ForCrumb="Contact" />
+        <section className="section-1 px-4">
+          <h1 className="secondaryTitle w-fit m-auto">
+            provide authentic credentials
+          </h1>
+          <h2 className="mainTitle w-fit m-auto">Book Now</h2>
+        </section>
+        <form>
+          <div className={`absolute ${loading && "overlay"}`}></div>
+          <div className="oneway">
+            <div className="relative z-0 w-full mb-5 group">
+              <input
+                type="email"
+                name="floating_email"
+                id="floating_email"
+                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                onChange={(e) => {
+                  setBooking({ ...Booking, Email: e.target.value });
+                }}
+                required
+              />
+              <label
+                htmlFor="floating_email"
+                className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >
+                Email
+              </label>
+            </div>
+            <div className="relative z-0 w-full mb-5 group">
+              <input
+                type="time"
+                name="Fligh No"
+                id="FlighNo"
+                onChange={(e) => {
+                  setBooking({ ...Booking, Time: e.target.value });
+                }}
+                max="20:00"
+                min="8:00"
+                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                required
+              />
+              <label
+                htmlFor="FlighNo"
+                className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >
+                Select Time
+              </label>
+            </div>
+            <div className="relative z-0 w-full mb-5 group">
+              <input
+                type="email"
+                name="Sector"
+                id="Sector"
+                onChange={(e) => {
+                  setBooking({ ...Booking, Name: e.target.value });
+                }}
+                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                required
+              />
+              <label
+                htmlFor="Sector"
+                className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >
+                Name
+              </label>
+            </div>
+            <div className="relative z-0 w-full mb-5 group">
+              <input
+                type="Date"
+                onChange={(e) => {
+                  setBooking({
+                    ...Booking,
+                    BookingDate: e.target.value,
+                  });
+                }}
+                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                required
+              />
+            </div>
+
+            <div className="time flex justify-center items-center flex-col">
+              <select
+                className="text-[14px]"
+                onChange={(e) => {
+                  setBooking({ ...Booking, Tour: parseInt(e.target.value) });
+                }}
+                required
+              >
+                <option value="">Select Tour</option>
+                {Tours.map((item) => {
+                  return (
+                    <option value={item.Id}>
+                      {item.Title.substring(0, 80) + "..."}
+                    </option>
+                  );
+                })}
+              </select>
+            </div>
+
+            <div className="grid md:grid-cols-2 md:gap-6">
+              <div className="relative z-0 w-full mb-5 group">
+                <input
+                  type="number"
+                  name="Sector"
+                  id="Bagge"
+                  onChange={(e) => {
+                    setBooking({ ...Booking, phone: e.target.value });
+                  }}
+                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  placeholder=" "
+                  required
+                />
+                <label
+                  htmlFor="Bagge"
+                  className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >
+                  Phone
+                </label>
+              </div>
+              <div className="relative z-0 w-full mb-5 group">
+                <select
+                  className="text-black"
+                  onChange={(e) => {
+                    setBooking({ ...Booking, group: parseInt(e.target.value) });
+                  }}
+                  required
+                >
+                  <option value="">Group of 5 persons</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+            </div>
+            <div className="relative z-0 w-full mb-5 group">
+              {Booking.Tour ? (
+                <>
+                  {Booking.group && (
+                    <>
+                      <h1 className="p-2 bg-red-700 text-white text-[20px]">
+                        {" "}
+                        price:{" "}
+                        {Tours.map((item) => {
+                          if (item.Id === Booking.Tour)
+                            return <>{item.Price * Booking.group}$</>;
+                        })}
+                      </h1>
+                    </>
+                  )}
+                </>
+              ) : (
+                ""
+              )}
+            </div>
+          </div>
+          <button>Book</button>
+        </form>
+        {/* feed back form */}
+
         <section className="section-1 px-4">
           <h1 className="secondaryTitle w-fit m-auto">Leave us a message</h1>
           <h2 className="mainTitle w-fit m-auto">Contact Form</h2>

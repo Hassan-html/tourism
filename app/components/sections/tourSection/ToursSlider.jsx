@@ -17,7 +17,7 @@ const ToursSlider = () => {
     }
   });
   const last3 = Tours.filter((item) => {
-    if (item.Id >= 3) {
+    if (item.Id > 3) {
       return item;
     }
   });

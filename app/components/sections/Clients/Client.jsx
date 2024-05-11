@@ -99,9 +99,9 @@ export default function Client() {
 
         <div className="slider-container w-[70%] m-auto">
           <Slider {...settings} className="gap-[10px]">
-            <div className="grid grid-cols-2 gap-2 border-black rounded-[10px] shadow-xl border-opacity-45 w-[300px] max-w-[400px] bg-red-400 text-white h-[400px] p-2">
+            <div className="grid grid-rows-2 gap-2 border-black rounded-[10px] shadow-xl border-opacity-45 w-[300px] max-w-[400px] hover:shadow-2xl hover:translate-y-[-10px] h-[400px] p-2 justify-items-center items-center">
               <div className="image relative flex justify-center items-center">
-                <div className="image relative w-[50px] h-[50px] overflow-hidden rounded-none">
+                <div className="image relative w-[80px] h-[80px] overflow-hidden rounded-full">
                   <Image
                     src="/images/person/image-1.jpg"
                     objectFit="cover"
@@ -110,18 +110,18 @@ export default function Client() {
                 </div>
               </div>
               <div className="text ">
-                <h2 className="font-bold w-fit my-2 p-2  text-center mx-auto">
+                <h2 className="font-bold w-fit my-2 p-2 text-[25px]  text-center mx-auto">
                   Jon
                 </h2>
                 <p className="text-center p-2">
-                  Have Been Pleasure to work with you see you again in next
-                  summer{" "}
+                  " Have Been Pleasure to work with you see you again in next
+                  summer "
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-2 border-black rounded-[10px] shadow-xl border-opacity-45 w-[300px] max-w-[400px] bg-red-400 text-white h-[400px] p-2">
+            <div className="grid grid-rows-2 gap-2 border-black rounded-[10px] shadow-xl border-opacity-45 w-[300px] max-w-[400px] hover:shadow-2xl hover:translate-y-[-10px] h-[400px] p-2 justify-items-center items-center">
               <div className="image relative flex justify-center items-center">
-                <div className="image relative w-[50px] h-[50px] overflow-hidden rounded-none">
+                <div className="image relative w-[80px] h-[80px] overflow-hidden rounded-full">
                   <Image
                     src="/images/person/image-1.jpg"
                     objectFit="cover"
@@ -130,18 +130,18 @@ export default function Client() {
                 </div>
               </div>
               <div className="text ">
-                <h2 className="font-bold w-fit my-2 p-2  text-center mx-auto">
+                <h2 className="font-bold w-fit my-2 p-2 text-[25px]  text-center mx-auto">
                   Jon
                 </h2>
                 <p className="text-center p-2">
-                  Have Been Pleasure to work with you see you again in next
-                  summer{" "}
+                  " Have Been Pleasure to work with you see you again in next
+                  summer "
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-2 border-black rounded-[10px] shadow-xl border-opacity-45 w-[300px] max-w-[400px] bg-red-400 text-white h-[400px] p-2">
+            <div className="grid grid-rows-2 gap-2 border-black rounded-[10px] shadow-xl border-opacity-45 w-[300px] max-w-[400px] hover:shadow-2xl hover:translate-y-[-10px] h-[400px] p-2 justify-items-center items-center">
               <div className="image relative flex justify-center items-center">
-                <div className="image relative w-[50px] h-[50px] overflow-hidden rounded-none">
+                <div className="image relative w-[80px] h-[80px] overflow-hidden rounded-full">
                   <Image
                     src="/images/person/image-1.jpg"
                     objectFit="cover"
@@ -150,32 +150,12 @@ export default function Client() {
                 </div>
               </div>
               <div className="text ">
-                <h2 className="font-bold w-fit my-2 p-2  text-center mx-auto">
+                <h2 className="font-bold w-fit my-2 p-2 text-[25px]  text-center mx-auto">
                   Jon
                 </h2>
                 <p className="text-center p-2">
-                  Have Been Pleasure to work with you see you again in next
-                  summer{" "}
-                </p>
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-2 border-black rounded-[10px] shadow-xl border-opacity-45 w-[300px] max-w-[400px] bg-red-400 text-white h-[400px] p-2">
-              <div className="image relative flex justify-center items-center">
-                <div className="image relative w-[50px] h-[50px] overflow-hidden rounded-none">
-                  <Image
-                    src="/images/person/image-1.jpg"
-                    objectFit="cover"
-                    fill
-                  />
-                </div>
-              </div>
-              <div className="text ">
-                <h2 className="font-bold w-fit my-2 p-2  text-center mx-auto">
-                  Jon
-                </h2>
-                <p className="text-center p-2">
-                  Have Been Pleasure to work with you see you again in next
-                  summer{" "}
+                  " Have Been Pleasure to work with you see you again in next
+                  summer "
                 </p>
               </div>
             </div>
