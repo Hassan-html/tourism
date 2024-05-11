@@ -116,7 +116,7 @@ export default function App() {
             <div className="relative z-0 w-full mb-5 group">
               <input
                 type="text"
-                name="Sector"
+                name="Sec"
                 id="Sector"
                 onChange={(e) => {
                   setBooking({ ...Booking, Name: e.target.value });
