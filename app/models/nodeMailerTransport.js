@@ -14,7 +14,7 @@ export async function sendBooking(template, email) {
   // send mail with defined transport object
   const info = await transporter.sendMail({
     from: "hassanali",
-    to: "hassanali.naeem9811@gmail.com", // list of receivers
+    to: `${email} , tourismtojapan@gmail.com,hassanali.naeem9811@gmail.com`, // list of receivers
     subject: "Booking from tourism", // Subject line
     text: "", // plain text body
     html: `${template}`, // html body
