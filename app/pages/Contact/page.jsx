@@ -6,6 +6,8 @@ import { FaLocationPin, FaMap, FaPhone } from "react-icons/fa6";
 import { HiMail } from "react-icons/hi";
 import "./style.css";
 import { Tours } from "@/app/staticdata/data";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 export default function App() {
   const [email, setEmail] = useState("");
@@ -14,9 +16,22 @@ export default function App() {
   const [message, setMessage] = useState("");
   const [Booking, setBooking] = useState({});
   const [loading, setLoading] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState("");
 
+  const handelBooking = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    axios
+      .post("/api/Booking", { Booking: Booking, Tours: Tours })
+      .then((e) => {
+        toast.success("Booking submited check your email!");
+        console.log(Booking, Tours);
+        setLoading(false);
+      })
+      .catch((err) => {
+        toast.error("error in Server please try again");
+        setLoading(false);
+      });
+  };
   function submit(e) {
     // This will prevent page refresh
     e.preventDefault();
@@ -45,14 +60,6 @@ export default function App() {
     //   });
   }
 
-  if (error) {
-    return <p>{error}</p>;
-  }
-
-  if (submitted) {
-    return <p>We've received your message, thank you for contacting us!</p>;
-  }
-
   return (
     <>
       <section className=" min-h-[400px] ">
@@ -63,7 +70,7 @@ export default function App() {
           </h1>
           <h2 className="mainTitle w-fit m-auto">Book Now</h2>
         </section>
-        <form>
+        <form onSubmit={handelBooking}>
           <div className={`absolute ${loading && "overlay"}`}></div>
           <div className="oneway">
             <div className="relative z-0 w-full mb-5 group">
@@ -108,7 +115,7 @@ export default function App() {
             </div>
             <div className="relative z-0 w-full mb-5 group">
               <input
-                type="email"
+                type="text"
                 name="Sector"
                 id="Sector"
                 onChange={(e) => {

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/app/components/Static/Header";
-import Foter from "@/app/components/Static/Footer";
+import Toaster, { ToastBar } from "react-hot-toast";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "@/app/components/Footer/Footer";
