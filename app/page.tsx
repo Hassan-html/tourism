@@ -36,7 +36,7 @@ export default function Home() {
                 experiences. Let us guide you on your next journey.
               </p>
             </div>
-            <Link href={"/"} className="primary-btn text-white">
+            <Link href={"/pages/Contact"} className="primary-btn text-white">
               Book Now
             </Link>
           </section>
