@@ -24,7 +24,7 @@ export default function Footer() {
                   experiences, or simply want to say hello, we're here for you.
                 </p>
                 <div className="buttons flex flex-col gap-[20px] justify-center items-center">
-                  <Link href={"/Contact"} className="primary-btn">
+                  <Link href={"/pages/Contact"} className="primary-btn">
                     Contact
                   </Link>
                 </div>
@@ -47,20 +47,20 @@ export default function Footer() {
               <h1 className="title ">Want to get in touch?</h1>
               <article className="box">
                 <div className="subTiltle">Call 24/7 for inquirires</div>
-                <a className="spcLink " href="tel:0524563707">
-                  052-8979090
+                <a className="spcLink " href="tel:+81 80-8170-5680">
+                  +81 80-8170-5680
                 </a>
               </article>
               <article className="box">
                 <div className="subTiltle">Call 24/7 for inquirires</div>
-                <a className="spcLink " href="tel:0524563707">
-                  052-8979090
+                <a className="spcLink " href="tel:+81 80-8170-5680">
+                  +81 80-8170-5680
                 </a>
               </article>
               <article className="box">
                 <div className="subTiltle">Call 24/7 for inquirires</div>
-                <a className="spcLink " href="tel:0524563707">
-                  052-8979090
+                <a className="spcLink " href="tel:+81 80-8170-5680">
+                  +81 80-8170-5680
                 </a>
               </article>
             </section>
