@@ -100,7 +100,7 @@ export default function Footer() {
             <p className="flex justify-center items-center gap-2 text-sm">
               {" "}
               <FaCopyright /> All Rights Reserved {new Date().getFullYear()}{" "}
-              Developer Hsn-Code{" "}
+              Developer <Link href="phone:+923083336868">Hsn-Code</Link>{" "}
             </p>
           </footer>
         </footer>

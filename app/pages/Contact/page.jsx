@@ -24,7 +24,6 @@ export default function App() {
       .post("/api/Booking", { Booking: Booking, Tours: Tours })
       .then((e) => {
         toast.success("Booking submited check your email!");
-        console.log(Booking, Tours);
         alert("Check Your email For confirmation! !");
         setLoading(false);
       })

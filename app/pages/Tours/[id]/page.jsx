@@ -32,12 +32,19 @@ const TourDetail = () => {
               <>
                 <div className="gallery">
                   <div className="relative image h-[500px]">
-                    <Image
-                      src={`/images/tours/${item.mainImg}`}
-                      objectFit="cover"
-                      fill
-                      alt={`/images/tours/${item.mainImg}`}
-                    />
+                    <iframe
+                      className="w-full h-full"
+                      src={item.vlink}
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                      onEnded={(e) => {
+                        e.currentTarget.currentTime = 0;
+                        e.currentTarget.play();
+                      }}
+                    ></iframe>
                   </div>
                   <div className="details">
                     <h1 className="Title">{item.Title}</h1>

@@ -5,6 +5,7 @@ export const Tours = [
       "Private Full Day Tour to Mount Fuji and Hakone With English Speaking Guide ",
     Duration: "10hrs",
     Price: 420,
+    vlink: "https://www.youtube.com/embed/G5RpJwCJDqc?si=O0WTfeE4WhPpuXP9",
     mainImg: "mountfuji.jpg",
     tourLocation: "Chiyoda, Japan",
     Overview: [
@@ -93,6 +94,7 @@ export const Tours = [
       "Tokyo Private City Tour By Car/Van With English speaking Tour Guide ",
     Duration: "10hrs",
     Price: 360,
+    vlink: "https://www.youtube.com/embed/pJwjgXcJ4zQ?si=CjtDB_7z1hBCl9j7",
     mainImg: "tokyo.jpg",
     tourLocation: "Yaesu, Japan",
     Overview: [
@@ -172,6 +174,7 @@ export const Tours = [
     Title: "1 Day Private Nikko World Heritage Tour With English ",
     Duration: "12hrs",
     Price: 500,
+    vlink: "https://www.youtube.com/embed/TgQyHOJhZAU?si=BcE1dboYYEYzcvBy",
     mainImg: "niko.jpg",
     tourLocation: "Yaesu, Japan",
     Overview: [
@@ -245,6 +248,7 @@ export const Tours = [
     Title: " Tokyo Narita Airport (NRT) Transfer Private Place",
     Duration: "1:30 hours",
     Price: 215,
+    vlink: "https://www.youtube.com/embed/BrfX2rFexNg?si=WI02lQ-l5w-CIQCo",
     mainImg: "airport.jpg",
     tourLocation: "Yaesu, Japan",
     Overview: [
@@ -287,6 +291,7 @@ export const Tours = [
       " One Day Tour Snow Monkey Park and Zenkoji Temple With English Speaking Guide",
     Duration: "12 hours",
     Price: 490,
+    vlink: "https://www.youtube.com/embed/i7STznonvNs?si=hjmYzYt4DRh6mYr9",
     mainImg: "snow.jpg",
     tourLocation: "Yaesu, Japan",
     Overview: [
