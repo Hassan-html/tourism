@@ -43,9 +43,10 @@ export default function Home() {
         </div>
       </div>
 
-      <Service />
+    
       <ToursSlider />
       <WhyUs />
+        <Service />
       <Client />
     </>
   );
