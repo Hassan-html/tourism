@@ -22,7 +22,8 @@ export default function App() {
     setLoading(true);
     axios
       .post("/api/Booking", { Booking: Booking, Tours: Tours })
-      .then((e) => {
+      .then((res) => {
+        console.log(res);
         toast.success("Booking submited check your email!");
         alert("We sent you Your Booking confirmation Email !");
         setLoading(false);

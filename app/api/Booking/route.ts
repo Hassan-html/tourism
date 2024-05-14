@@ -16,7 +16,7 @@ export const POST = async (request: NextRequest) => {
   };
   console.log(data, tour);
   try {
-    sendBooking(
+    const mail = sendBooking(
       BookingTemplate(
         data.Email,
         data.group,
@@ -24,10 +24,13 @@ export const POST = async (request: NextRequest) => {
         data.title,
         data.price
       ),
-      "hassamali.naeem9811@gmail.com"
+      data.Email
     );
     console.log("mail sent");
-    return NextResponse.json({ message: "mail sent" }, { status: 200 });
+    return NextResponse.json(
+      { message: "mail sent: " + mail },
+      { status: 200 }
+    );
   } catch (error) {
     console.log("Mail error: " + error);
     return NextResponse.json({ message: "mail sent" }, { status: 200 });
