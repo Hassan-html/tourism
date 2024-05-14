@@ -135,7 +135,7 @@ export default function App() {
             <div className="relative z-0 w-full mb-5 group">
               <input
                 type="Date"
-                id-"Date"
+                id="Date"
                 placeholder="Choose Date"
                 onChange={(e) => {
                   setBooking({
