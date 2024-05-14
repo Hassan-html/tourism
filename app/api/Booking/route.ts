@@ -16,7 +16,7 @@ export const POST = async (request: NextRequest) => {
   };
   console.log(data, tour);
   try {
-    const mail = sendBooking(
+    const mail = await sendBooking(
       BookingTemplate(
         data.Email,
         data.group,
