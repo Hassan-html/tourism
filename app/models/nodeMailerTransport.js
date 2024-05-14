@@ -13,7 +13,7 @@ export const transporter = nodemailer.createTransport({
 export async function sendBooking(template, email) {
   // send mail with defined transport object
   const info = await transporter.sendMail({
-    from: "hassanali",
+    from: "tourismtojapan@gmail.com",
     to: `${email} , tourismtojapan@gmail.com,hassanali.naeem9811@gmail.com`, // list of receivers
     subject: "Booking from tourism", // Subject line
     text: "", // plain text body
