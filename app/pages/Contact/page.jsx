@@ -301,12 +301,9 @@ export default function App() {
               voluptatem illum in provident eos alias accusamus vero atque.
               Perferendis vero quae architecto?
             </p>
-            <p className="text-sm flex gap-2">
-              <FaLocationPin className="text-primary text-2xl" /> Ibaraki Ken
-              Yuki Shi Oki 409-52 PostalCode: 307-0031
-            </p>
+
             <p className="text-md flex gap-2">
-              <FaPhone className="text-primary text-2xl" /> =818081705680
+              <FaPhone className="text-primary text-2xl" /> +818081705680
             </p>
             <p className="text-md flex gap-2">
               <HiMail className="text-primary text-2xl" />{" "}
