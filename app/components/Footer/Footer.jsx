@@ -46,15 +46,15 @@ export default function Footer() {
             <section className="footer-section">
               <h1 className="title ">Want to get in touch?</h1>
               <article className="box">
-                <div className="subTiltle">Call 24/7 for inquirires</div>
+                <div className="subTiltle">Company Name</div>
                 <a className="spcLink " href="tel:+81 80-8170-5680">
-                  +81 80-8170-5680
+                  TourismToJapan
                 </a>
               </article>
               <article className="box">
-                <div className="subTiltle">Call 24/7 for inquirires</div>
-                <a className="spcLink " href="tel:+81 80-8170-5680">
-                  +81 80-8170-5680
+                <div className="subTiltle">Email</div>
+                <a className="spcLink " href="mailto:tourismtojapan@gmail.com">
+                  tourismtojapan@gmail.com
                 </a>
               </article>
               <article className="box">

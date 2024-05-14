@@ -25,7 +25,7 @@ export default function App() {
       .then((e) => {
         toast.success("Booking submited check your email!");
         alert("We sent you Your Booking confirmation Email !");
-        setLoading(false); 
+        setLoading(false);
       })
       .catch((err) => {
         toast.error("error in Server please try again");
@@ -144,10 +144,9 @@ export default function App() {
                   });
                 }}
                 className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-               
                 required
               />
-               <label
+              <label
                 htmlFor="Date"
                 className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
@@ -302,16 +301,15 @@ export default function App() {
               Perferendis vero quae architecto?
             </p>
             <p className="text-sm flex gap-2">
-              <FaLocationPin className="text-primary text-2xl" /> Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Provident rerum
-              impedit, fuga vero odit quaerat. Culpa repellendus
+              <FaLocationPin className="text-primary text-2xl" /> Ibaraki Ken
+              Yuki Shi Oki 409-52 PostalCode: 307-0031
             </p>
             <p className="text-md flex gap-2">
-              <FaPhone className="text-primary text-2xl" /> 00-00-00-00
+              <FaPhone className="text-primary text-2xl" /> =818081705680
             </p>
             <p className="text-md flex gap-2">
               <HiMail className="text-primary text-2xl" />{" "}
-              info@tourismtojapan.com
+              tourismtojapan@gmail.com
             </p>
           </section>
         </section>
