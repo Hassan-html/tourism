@@ -27,10 +27,7 @@ export const POST = async (request: NextRequest) => {
       data.Email
     );
     console.log("mail sent");
-    return NextResponse.json(
-      { message: "mail sent: " + mail },
-      { status: 200 }
-    );
+    return NextResponse.json({ message: mail }, { status: 200 });
   } catch (error) {
     console.log("Mail error: " + error);
     return NextResponse.json({ message: "mail sent" }, { status: 200 });
