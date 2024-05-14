@@ -22,7 +22,8 @@ export const POST = async (request: NextRequest) => {
         data.group,
         data.BookingDate,
         data.title,
-        data.price
+        data.price,
+        data.phone
       ),
       data.Email
     );

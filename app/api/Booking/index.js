@@ -1,4 +1,11 @@
-export const BookingTemplate = (email, group, BookingDate, tour, price) => {
+export const BookingTemplate = (
+  email,
+  group,
+  BookingDate,
+  tour,
+  price,
+  phone
+) => {
   return `<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
@@ -247,6 +254,9 @@ table, td { color: #000000; } </style>
         
   <div style="font-size: 14px; color: #333333; line-height: 120%; text-align: left; word-wrap: break-word;">
     <p style="font-size: 14px; line-height: 120%;"><span style="font-size: 20px; line-height: 24px;"><strong>Booked For ${BookingDate}</strong></span></p>
+  </div>
+  <div style="font-size: 14px; color: #333333; line-height: 120%; text-align: left; word-wrap: break-word;">
+    <p style="font-size: 14px; line-height: 120%;"><span style="font-size: 20px; line-height: 24px;"><strong>Contact ${phone}</strong></span></p>
   </div>
 
       </td>
