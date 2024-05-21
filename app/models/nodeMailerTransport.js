@@ -9,7 +9,7 @@ export const transporter = nodemailer.createTransport({
   secure: true, // Use `true` for port 465, `false` for all other ports
   auth: {
     user: "tourismtojapan@gmail.com",
-    pass: "eyvp dijd camr ictu",
+    pass: "lblk ncud jmzg goha",
   },
 });
 
